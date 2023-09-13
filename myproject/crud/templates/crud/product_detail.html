@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}商品詳細{% endblock %}
+{% block content %}
+<body>
+    <h1>{{ product.name }}</h1>
+    <p>カテゴリ: {{ product.category }}</p>
+    <img src="{{ product.image_url }}" alt="{{ product.name }}の画像">
+    <p>商品詳細の説明: {{ product.description }}</p>
+    <!-- 他の商品情報を表示するコード -->
+</body>
